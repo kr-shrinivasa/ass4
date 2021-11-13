@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "poppins", sans-serif;
+        }
+
+        .navlist{
+            width: 100%;
+            display: flex;
+            padding: 10px 25px;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        nav{
+            flex-basis: 20%;
+            border-radius: 5%;
+            transition:.5s;
+            background-color: rgba(230, 235, 240, 0.7);
+            height: 100%;
+        }
+        nav:hover{
+            box-shadow: 1px 3px 5px 3px rgb(78, 75, 75,0.7);
+            border-radius:10%;
+            background-color: white;
+
+        }
+        .week ul li{
+            list-style-type: square;   
+        }
+        .month ol li{
+            list-style-type: lower-roman;
+        }
+        .season ul li{
+            list-style: none;
+        }
+        li:hover{
+            color: rgb(42, 22, 223);
+        }
+        @media screen and (max-width:770px){
+        .navlist{
+            flex-direction: column;    
+        }
+        nav{
+            margin-bottom: 30px;
+        }    
+    }
+            
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- main  -->
+    <section class="navlist">
+        <!-- list1 -->
+        <nav class="week">
+            <ul>
+                <li>sun</li>
+                <li>mon</li>
+                <li>tue</li>
+                <li>wed</li>
+                <li>thu</li>
+                <li>fri</li>
+                <li>sat</li>
+            </ul>
+        </nav>
+        <!-- list2 -->
+        <nav class="month">
+            <ol>
+                <li>jan</li>
+                <li>feb</li>
+                <li>mar</li>
+                <li>apl</li>
+                <li>may</li>
+                <li>jun</li>
+                <li>jul</li>
+                <li>aug</li>
+                <li>sep</li>
+                <li>oct</li>
+                <li>nov</li>
+                <li>dec</li>
+            </ol>
+        </nav>
+<!-- list3 -->
+        <nav class="season">
+            <ul>
+                <li>winter</li>
+                <li>summer</li>
+                <li>monsoon</li>
+                <li>post-monsoon</li>
+            </ul>
+        </nav>
+        <!-- subs -->
+        <nav>
+
+            <ul>
+                <li>winter
+                    <ol>
+                        <li>dec</li>
+                        <li>jan</li>
+                        <li>feb</li>
+                    </ol>
+                </li>
+                <li>
+                    summer
+                    <ol>
+                        <li>mar</li>
+                        <li>apr</li>
+                        <li>may</li>
+                    </ol>
+                </li>
+                <li>
+                    mansoon
+                    <ol>
+                        <li>jun</li>
+                        <li>jul</li>
+                        <li>sep</li>
+                        <li>aug</li>
+                    </ol>
+                </li>
+                <li>
+                    post-monsoon
+                    <ol>
+                        <li>octnov</li>
+                        <li>octnov</li>
+                    </ol>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+<!-- end -->
+</body>
+
+</html>
